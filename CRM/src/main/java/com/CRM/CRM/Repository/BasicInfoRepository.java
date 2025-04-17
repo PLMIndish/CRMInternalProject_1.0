@@ -1,14 +1,14 @@
-/* Repository for Task assignment info
+/*Repository for Basic info
  * created by -Mounika
  */
 package com.CRM.CRM.Repository;
 
 import org.springframework.stereotype.Repository;
 
-import com.CRM.CRM.Entity.TaskAssignment;
+import com.CRM.CRM.Entity.BasicInfo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
 @Repository
-public interface TaskAssignmentRepository extends JpaRepository<TaskAssignment, Long> {}
+public interface BasicInfoRepository extends JpaRepository<BasicInfo, Long> {}
