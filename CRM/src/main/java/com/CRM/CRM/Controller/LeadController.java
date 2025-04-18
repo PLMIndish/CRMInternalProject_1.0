@@ -43,7 +43,9 @@ public class LeadController {
 
 		CompanyInfo companyInfo = new CompanyInfo();
 		companyInfo.setCompanyName(companyDTO.getCompanyName());
+		companyInfo.setCreated_by(companyDTO.getCreated_by());
 		companyInfo.setCreated_at(LocalDateTime.now());
+		companyInfo.setUpdated_by(companyDTO.getUpdated_by());
 		companyInfo.setUpdated_at(LocalDateTime.now());
 
 		companyRepo.save(companyInfo);
@@ -58,7 +60,9 @@ public class LeadController {
 			basicInfo.setAddress(basicInfoDTO.getAddress());
 			basicInfo.setContactNumber(basicInfoDTO.getContactNumber());
 			basicInfo.setEmail(basicInfoDTO.getEmail());
+			basicInfo.setCreated_by(basicInfoDTO.getCreated_by());
 			basicInfo.setCreated_at(LocalDateTime.now());
+			basicInfo.setUpdated_by(basicInfoDTO.getUpdated_by());
 			basicInfo.setUpdated_at(LocalDateTime.now());
 
 			basicInfoRepo.save(basicInfo);

@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class CompanyDataDTO {
 
-	@JsonProperty("companyFormBasicInfo")
+	@JsonProperty("companyContactInfoForm")
 	private List<BasicInfoDTO> basicInfoDTO;
 
 	public List<BasicInfoDTO> getBasicInfoDTO() {
