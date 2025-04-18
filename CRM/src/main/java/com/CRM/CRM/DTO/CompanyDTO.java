@@ -6,6 +6,8 @@ package com.CRM.CRM.DTO;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class CompanyDTO {
 
 	private UUID company_id;
@@ -23,6 +25,7 @@ public class CompanyDTO {
 		this.company_id = company_id;
 	}
 
+	@JsonProperty("company_name")
 	public String getCompanyName() {
 		return companyName;
 	}
